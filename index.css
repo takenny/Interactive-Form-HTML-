@@ -1,0 +1,154 @@
+/**************************** General CSS ************************/
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    padding-top: 40px;
+    
+}
+#container {
+    margin: 0 auto;
+    padding: 5%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 1px 40px 0px rgb(236, 236, 236);
+
+}
+.d-flex {
+    margin: 0 auto;
+}
+.input-block {
+    margin: 13px 0;
+}
+input {
+    background-color: rgb(224, 235, 247);
+    border: 0px;
+    padding: 3px;
+    padding-left: 3px;
+}
+.flex-single-input input{
+    width: 418px;
+}
+
+/******************* Register acount Header ***********************/
+#container h1{
+    text-align: center;
+}
+
+/******************** User Image circle portrait ********************/
+#userPic {
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    justify-content: center;
+    position: relative;
+}
+
+#userPic:hover {
+    border: 2px solid rgb(174, 222, 245);
+    box-shadow: 0px 0.5px 30px 0px rgb(174, 222, 245);
+}
+
+#userPic svg{
+    display: block;
+
+}
+#userPic a{
+    position: absolute;
+    top: 85px;
+}
+#test {
+    display: none;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+}
+
+/*************************** Upload form ************************/
+#upload {
+    position: relative;
+}
+#upload-form {
+    position: absolute;
+    display: none; /* change to block for debuggine */
+    left: -220px;
+    box-shadow: 0px 1px 40px 0px rgb(236, 236, 236);
+    z-index: 3;
+}
+.card {
+    height: 400px;
+    width: 600px;
+}
+.card-header {
+    font-weight:bold;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+}
+.card-body{
+    padding-top: 50px;
+    position: relative;
+}
+.card-body input{
+    margin-top: 0 60px 10px 0;
+}
+
+#bar {
+    display: none;
+    margin-top: 10px;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    font-weight:bold;
+    background-color: grey;
+}
+
+#loading-circle {
+    position: relative;
+}
+#circle-svg {
+    position: absolute;
+}
+#browse-button {
+    margin-top: 20px;
+}
+#upload-button {
+    margin-top: 10px;
+}
+.circle-animation {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    transition: all 1s linear;
+}
+
+.button-animation
+{   
+    background-color: rgb(34, 184, 34) !important;
+    border-color: rgb(34, 184, 34) !important;
+    transition: all 1s linear;
+}
+
+.error {
+
+    border: 1px solid red;
+}
+.errorText {
+
+    color: red;
+}
+
+input, label {
+    display:block;
+}
+
+#upload-error {
+    text-align: center;
+    color: white;
+}
